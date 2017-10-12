@@ -26,6 +26,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-       return Trip::with(['guide','schedules'])->orderBy('Trip_id','desc')->get();
+       return Trip::with(['guide','schedules'])->orderBy('id','desc')->get();
     }
 }

@@ -10,7 +10,7 @@ class Trip extends Model
     	return $this->belongsTo(Guide::class);
     }
     
-    public function schedule(){
+    public function schedules(){
     	return $this->HasMany(Schedule::class);
     }
 }
