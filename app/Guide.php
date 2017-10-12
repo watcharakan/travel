@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Guide extends Model
 {
     public function trip(){
-    	return hasMany(Trip::class)
+    	return $this->hasMany(Trip::class)
     }
 }
