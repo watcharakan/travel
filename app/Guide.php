@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Guide extends Model
 {
     public function trip(){
-    	return $this->hasMany(Trip::class);
+    	return $this->belongsTo(Trip::class,'creater_id');
     }
 }
