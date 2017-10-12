@@ -22,7 +22,7 @@ class GuidesTableSeeder extends Seeder
             'password' => bcrypt('secret'),
             'tel' => $faker->phoneNumber,
             'address'=>$faker->address,
-            'id_guide'=>$faker->creditCardNumber,
+            'code_guide'=>$faker->creditCardNumber,
        		 ]);
     }
 }

@@ -19,7 +19,7 @@ class CreateGuidesTable extends Migration
             $table->string('email')->unique();
             $table->string('tel');
             $table->text('address');
-            $table->string('id_guide');
+            $table->string('code_guide');
             $table->string('password');
             $table->timestamps();
         });
