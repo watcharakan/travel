@@ -16,9 +16,9 @@ class CreateTripsGuidesTable extends Migration
         Schema::create('trips_guides', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('trip_id')->unsigned();
-            $table->foreign('trip_id')->references('trip_id')->on('trips');
+            $table->foreign('trip_id')->references('id')->on('trips');
             $table->integer('guide_id')->unsigned();
-            $table->foreign('guide_id')->references('guide_id')->on('guides');
+            $table->foreign('guide_id')->references('id')->on('guides');
             $table->timestamps();
         });
           Schema::enableForeignKeyConstraints();

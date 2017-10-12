@@ -16,9 +16,9 @@ class CreateTripsPlaces extends Migration
         Schema::create('trips_places', function (Blueprint $table) {
              $table->increments('id');
              $table->integer('trip_id')->unsigned();
-             $table->foreign('trip_id')->references('trip_id')->on('trips');
+             $table->foreign('trip_id')->references('id')->on('trips');
              $table->integer('place_id')->unsigned();
-             $table->foreign('place_id')->references('place_id')->on('places');
+             $table->foreign('place_id')->references('id')->on('places');
         });
         Schema::enableForeignKeyConstraints();
     }

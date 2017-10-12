@@ -16,11 +16,11 @@ class CreateTripsTable extends Migration
     {  Schema::disableForeignKeyConstraints();
 
         Schema::create('trips', function (Blueprint $table) {
-            $table->increments('trip_id');
+            $table->increments('id');
             $table->string('name',255);
             $table->text('description');
             $table->integer('creater_id')->unsigned()->nullable();
-            $table->foreign('creater_id')->references('guide_id')->on('guides');
+            $table->foreign('creater_id')->references('id')->on('guides');
             $table->string('location');
             $table->integer('catagories_id');
             $table->decimal('price',8,2);
