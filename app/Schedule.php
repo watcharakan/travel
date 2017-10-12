@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Schedule extends Model
 {
     public function trip(){
-    	return belongsTo(Trip::class);
+    	return $this->belongsTo(Trip::class);
     }
 }
