@@ -19,7 +19,8 @@ class TripsTableSeeder extends Seeder
             'creater_id' => $faker->numberBetween($min = 1, $max = 10),
             'location' => $faker->city ,
             'catagories_id'=>$faker->numberBetween($min = 1, $max = 10),
-            'price'=>$faker->numberBetween($min = 100, $max = 1000),
+            'price'=>$faker->numberBetween($min = 1000, $max = 3000),
        		 ]);
-    }
+    	}
+	}
 }

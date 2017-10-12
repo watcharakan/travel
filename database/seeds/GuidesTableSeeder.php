@@ -24,5 +24,6 @@ class GuidesTableSeeder extends Seeder
             'address'=>$faker->address,
             'code_guide'=>$faker->creditCardNumber,
        		 ]);
-    }
+    	}
+	}
 }

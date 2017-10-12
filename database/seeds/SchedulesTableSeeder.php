@@ -11,12 +11,14 @@ class SchedulesTableSeeder extends Seeder
      */
     public function run()
     {
+    	     $faker = Faker::create();
         foreach (range(1,10) as $index) {
-         DB::table('guides')->insert([
+         DB::table('schedules')->insert([
             'trip_id' => $faker->numberBetween($min = 1, $max = 10),
             'time' => $faker->time($format = 'H:i', $max = 'now'),
-            'description' => paragraph($nbSentences = 3, $variableNbSentences = true),
+            'description' => $faker->paragraph($nbSentences = 3, $variableNbSentences = true),
             
        		 ]);
-    }
+    	}
+	}
 }
