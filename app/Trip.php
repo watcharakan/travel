@@ -12,5 +12,6 @@ class Trip extends Model
 
     public function schedules(){
     	return $this->HasMany(Schedule::class);
+    	
     }
 }

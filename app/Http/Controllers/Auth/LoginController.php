@@ -33,7 +33,13 @@ class LoginController extends Controller
      * @return void
      */
     public function __construct()
-    {
+     {
         $this->middleware('guest')->except('logout');
-    }
+     }
+     /**
+     * Redirect the user to the GitHub authentication page.
+     *
+     * @return Response
+     */
+   
 }
