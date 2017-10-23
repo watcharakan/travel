@@ -37,7 +37,7 @@ return [
     'facebook' => [
     'client_id' => '146234599324261',
     'client_secret' => '50b073a262551698d1e4fbf31e5d6746',
-    'redirect' => 'http://projectravel.dev/login/facebook/callback',
+    'redirect' => 'http://projectravel.dev/api/login/facebook/callback',
 ],
 
 ];

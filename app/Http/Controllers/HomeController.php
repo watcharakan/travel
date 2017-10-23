@@ -28,4 +28,7 @@ class HomeController extends Controller
     {
        return Trip::with(['guide','schedules'])->orderBy('id','desc')->get();
     }
+    public function ggwp(){
+        return view('home');
+    }
 }
