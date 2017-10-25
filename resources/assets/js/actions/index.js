@@ -5,7 +5,7 @@ export const FACEBOOK_LOGIN ='facebook_login';
 // const ROOT_URL ='http://reduxblog.herokuapp.com/api';
 // const API_KEY ='?key=PAPERCLIP1233';
 export function tripPost(){
-	 const request = axios.get(`http://projectravel.dev/api/login/facebook`);
+	 const request = axios.get(`http://projectravel.dev/login/true`);
   return {
     type:TRIP_POSTS,
     payload: request

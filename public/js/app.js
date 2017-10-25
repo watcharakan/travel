@@ -5772,7 +5772,7 @@ var FACEBOOK_LOGIN = 'facebook_login';
 // const ROOT_URL ='http://reduxblog.herokuapp.com/api';
 // const API_KEY ='?key=PAPERCLIP1233';
 function tripPost() {
-	var request = __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('http://projectravel.dev/api/login/facebook');
+	var request = __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('http://projectravel.dev/login/true');
 	return {
 		type: TRIP_POSTS,
 		payload: request
