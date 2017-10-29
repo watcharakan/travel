@@ -35,7 +35,7 @@ class FacebookController extends Controller
 
          $authUser = $this->findOrCreateUser($user);
          Auth::login($authUser, true);
-         return redirect()->to('/login/true');
+         return redirect('http://localhost:3000/');
        
     }
      public function findOrCreateUser($user)
